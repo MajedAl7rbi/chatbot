@@ -1,0 +1,59 @@
+<html> 
+
+<head>
+<title>samrt roport</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<form action= "index.php" method="post">
+     <h3 class="star" style="font-size:40px;" >control direction</h3>
+
+<div class="main">
+
+
+       <div class= "forward">
+      <input type="submit"  value="forward" name = "forward" style="color:white ; font-size: 30px; background: green ; border-radius: 20px;">        
+       </div>
+
+        <br>
+		
+		<div class ="center">
+       
+       <input type="submit"  value="left" name = "left" style="color:white ; font-size: 30px; background: yellow ; border-radius: 20px;"> 
+	   
+       <input type="submit"  value="stop" name = "stop" style="color:white ; font-size: 30px; background: black ; border-radius: 20px;"> 
+
+         <input type="submit"  value="right" name = "right" style="color:white ; font-size: 30px; background: blue ; border-radius: 20px;">      
+         
+		 </div>
+
+        <br>
+        
+               <div class= " forward">
+
+    <input type="submit"  value="backward" name = "backward" style="color:white ; font-size: 30px; background: red ; border-radius: 20px;">   
+        </div>
+</div>
+
+</form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "bebc13e6-1919-4f85-9e60-c0a21675f41d", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "a48ead24-2cf0-4152-aaea-2878f761d93c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+
+</html>
